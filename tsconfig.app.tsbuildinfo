@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/passe-partout.d.ts","./src/vite-env.d.ts","./src/snippet/format.ts","./src/snippet/panel.ts","./src/snippet/passe-partout.ts","./src/snippet/styles.ts","./tests/format.test.ts","./tests/mount.test.ts"],"version":"6.0.3"}
