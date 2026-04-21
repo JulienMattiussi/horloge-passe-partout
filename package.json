@@ -6,6 +6,22 @@
   "description": "A tiny embeddable flip-clock widget using passe-partout characters.",
   "author": "YavaDeus",
   "license": "MIT",
+  "homepage": "https://horloge-passe-partout.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YavaDeus/horloge-passe-partout.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YavaDeus/horloge-passe-partout/issues"
+  },
+  "keywords": [
+    "clock",
+    "flip-clock",
+    "widget",
+    "fort-boyard",
+    "passe-partout",
+    "embeddable"
+  ],
   "scripts": {
     "dev": "concurrently -k -n snippet,vite -c magenta,cyan \"npm:build:snippet:watch\" \"vite\"",
     "build": "npm run build:snippet && tsc -b && vite build",

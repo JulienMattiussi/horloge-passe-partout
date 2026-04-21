@@ -85,6 +85,22 @@ The widget exposes CSS custom properties you can override to fit your page:
 `prefers-reduced-motion` is respected: the flip animation is shortened to a
 frame when the user prefers reduced motion.
 
+## Content Security Policy
+
+The snippet injects a `<style>` tag on first mount to register the widget's
+styles. If your host page ships a strict CSP, that injection is blocked and
+the clock renders unstyled. You need either:
+
+```
+style-src 'self' 'unsafe-inline';
+script-src 'self' https://horloge-passe-partout.vercel.app;
+img-src    'self' https://horloge-passe-partout.vercel.app data:;
+```
+
+or a nonce-based allowlist. The `data:` source in `img-src` is there because
+the preview image (and the animated panels at tick time) reference character
+images from the widget's origin — add your deploy URL accordingly.
+
 ## Development
 
 ```bash
