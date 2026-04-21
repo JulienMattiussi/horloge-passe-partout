@@ -45,6 +45,7 @@ function makeFlap(
 export function createSeparatorPanel(char: string): HTMLElement {
   const el = document.createElement("div");
   el.className = "pp-panel pp-panel--sep";
+  el.setAttribute("aria-hidden", "true");
   el.textContent = char;
   return el;
 }
@@ -55,6 +56,7 @@ export function createDigitPanel(
 ): DigitPanel {
   const el = document.createElement("div");
   el.className = "pp-panel";
+  el.setAttribute("aria-hidden", "true");
 
   const top = makeHalf("top", initial, imageBase);
   const bottom = makeHalf("bottom", initial, imageBase);

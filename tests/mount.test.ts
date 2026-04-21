@@ -73,6 +73,25 @@ describe("mount", () => {
     instance.destroy();
     expect(container.children).toHaveLength(0);
     expect(container.classList.contains("pp-clock")).toBe(false);
+    expect(container.getAttribute("role")).toBeNull();
+    expect(container.getAttribute("aria-label")).toBeNull();
+  });
+
+  it("exposes the time to assistive tech via role + aria-label", () => {
+    const container = makeContainer();
+    mount(container, { format: "HH:MM", time: "07:30" });
+    expect(container.getAttribute("role")).toBe("img");
+    expect(container.getAttribute("aria-label")).toBe("07:30");
+  });
+
+  it("hides decorative panels from assistive tech", () => {
+    const container = makeContainer();
+    mount(container, { format: "HH:MM", time: "07:30" });
+    const panels = container.querySelectorAll(".pp-panel");
+    expect(panels.length).toBeGreaterThan(0);
+    panels.forEach((p) => {
+      expect(p.getAttribute("aria-hidden")).toBe("true");
+    });
   });
 
   it("renders six digit panels for HH:MM:SS", () => {

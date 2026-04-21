@@ -1,4 +1,4 @@
-.PHONY: help install dev build build-snippet build-preview preview test test-watch typecheck format format-check check clean
+.PHONY: help install dev build build-snippet build-preview build-og preview test test-watch typecheck format format-check check clean
 
 default: help
 
@@ -21,6 +21,9 @@ build-snippet: ## Build the embeddable snippet only
 
 build-preview: ## Regenerate public/preview.svg from the digit images (needs ImageMagick)
 	bash scripts/build-preview.sh
+
+build-og: ## Rasterize public/og.svg to public/og.png (needs ImageMagick)
+	bash scripts/build-og.sh
 
 preview: ## Preview the production build locally
 	npm run preview

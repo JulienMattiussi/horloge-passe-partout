@@ -21,7 +21,7 @@ function Horloge(props: PassePartoutMountOptions) {
 }
 
 const snippetExample = `<div data-passe-partout data-format="HH:MM"></div>
-<script src="https://<votre-deploiement>.vercel.app/passe-partout.js"></script>`;
+<script src="https://horloge-passe-partout.vercel.app/passe-partout.js"></script>`;
 
 export function App() {
   return (

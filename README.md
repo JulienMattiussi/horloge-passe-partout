@@ -120,6 +120,18 @@ scripts/              # build helpers
 tests/                # vitest unit + DOM tests
 ```
 
+## Image credits
+
+The digit images are photographs of the _passe-partout_ characters from the
+French TV game show **Fort Boyard** (© ALP / France Télévisions). They are
+reused here in a derivative, non-commercial, personal project as a tribute to
+the show. All rights remain with their original holders.
+
+If you are a rights holder and would like the images removed, please open an
+issue.
+
 ## License
 
-MIT © [YavaDeus](./LICENSE)
+The code in this repository is released under the [MIT License](./LICENSE) ©
+YavaDeus. This license covers the source code only — **not** the character
+images under `public/images/`, which are subject to the credits above.

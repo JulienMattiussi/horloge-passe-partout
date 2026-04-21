@@ -80,3 +80,11 @@ export function nowSnapshot(
   }
   return { h: clock.getHours(), m: clock.getMinutes(), s: clock.getSeconds() };
 }
+
+export function renderFormat(format: string, time: Time): string {
+  const pad = (n: number) => n.toString().padStart(2, "0");
+  return format
+    .replace(/HH/g, pad(time.h))
+    .replace(/MM/g, pad(time.m))
+    .replace(/SS/g, pad(time.s));
+}

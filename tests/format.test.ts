@@ -8,6 +8,7 @@ import {
   nowSnapshot,
   parseFixedTime,
   parseFormat,
+  renderFormat,
 } from "../src/snippet/format";
 
 describe("parseFormat", () => {
@@ -128,6 +129,20 @@ describe("msUntilNextTick", () => {
   it("aligns to the next minute when seconds are not visible", () => {
     const d = new Date(2020, 0, 1, 10, 20, 30, 250);
     expect(msUntilNextTick(d, false)).toBe(29_750);
+  });
+});
+
+describe("renderFormat", () => {
+  it("substitutes HH, MM, SS with zero-padded values", () => {
+    expect(renderFormat("HH:MM:SS", { h: 7, m: 5, s: 42 })).toBe("07:05:42");
+  });
+
+  it("preserves literal separators", () => {
+    expect(renderFormat("HH-MM", { h: 9, m: 15, s: 0 })).toBe("09-15");
+  });
+
+  it("works with partial formats", () => {
+    expect(renderFormat("HH:MM", { h: 12, m: 30, s: 45 })).toBe("12:30");
   });
 });
 

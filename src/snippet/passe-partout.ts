@@ -23,6 +23,7 @@ import {
   msUntilNextTick,
   nowSnapshot,
   parseFormat,
+  renderFormat,
   type Slot,
 } from "./format";
 import {
@@ -146,6 +147,8 @@ export function mount(
 
   container.replaceChildren();
   container.classList.add("pp-clock");
+  container.setAttribute("role", "img");
+  container.setAttribute("aria-label", renderFormat(format, initial));
   const updaters = buildPanels(container, slots, imageBase, initial);
 
   function tick(): void {
@@ -153,6 +156,7 @@ export function mount(
     for (const { slot, panel } of updaters) {
       panel.update(getDigit(getSourceValue(now, slot.source), slot.position));
     }
+    container.setAttribute("aria-label", renderFormat(format, now));
   }
 
   const stopClock = fixedTime ? null : startClock(needsSeconds, tick);
@@ -164,6 +168,8 @@ export function mount(
       for (const u of updaters) u.panel.destroy();
       container.replaceChildren();
       container.classList.remove("pp-clock");
+      container.removeAttribute("role");
+      container.removeAttribute("aria-label");
       mounted.delete(container);
     },
   };
