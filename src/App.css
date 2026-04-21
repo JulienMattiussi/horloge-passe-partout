@@ -7,6 +7,16 @@
 .demo header {
   text-align: center;
   margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.demo .logo {
+  width: clamp(72px, 14vw, 112px);
+  height: auto;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .demo h1 {
@@ -112,6 +122,15 @@
   background: #f3f1ec;
   padding: 1px 6px;
   border-radius: 4px;
+}
+
+.demo .footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid #e5e0d5;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #777;
 }
 
 @media (max-width: 640px) {

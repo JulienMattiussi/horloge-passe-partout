@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "description": "A tiny embeddable flip-clock widget using passe-partout characters.",
+  "author": "YavaDeus",
+  "license": "MIT",
   "scripts": {
     "dev": "concurrently -k -n snippet,vite -c magenta,cyan \"npm:build:snippet:watch\" \"vite\"",
     "build": "npm run build:snippet && tsc -b && vite build",

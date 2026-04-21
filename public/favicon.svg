@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Horloge Passe-Partout">
+  <circle cx="50" cy="50" r="48" fill="#1a1a1a"/>
+  <g fill="#f3f1ec" opacity="0.45">
+    <rect x="49" y="6" width="2" height="6" rx="1"/>
+    <rect x="88" y="49" width="6" height="2" rx="1"/>
+    <rect x="49" y="88" width="2" height="6" rx="1"/>
+    <rect x="6" y="49" width="6" height="2" rx="1"/>
+  </g>
+  <g font-family="'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="46" text-anchor="middle" fill="#f3f1ec">
+    <text x="50" y="50" transform="rotate(-60 50 50)">P</text>
+    <text x="50" y="50" transform="rotate(60 50 50)">P</text>
+  </g>
+  <circle cx="50" cy="50" r="3" fill="#f3f1ec"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#f3f1ec"/>
+
+  <g transform="translate(100 115) scale(4)">
+    <circle cx="50" cy="50" r="48" fill="#1a1a1a"/>
+    <g fill="#f3f1ec" opacity="0.45">
+      <rect x="49" y="6" width="2" height="6" rx="1"/>
+      <rect x="88" y="49" width="6" height="2" rx="1"/>
+      <rect x="49" y="88" width="2" height="6" rx="1"/>
+      <rect x="6" y="49" width="6" height="2" rx="1"/>
+    </g>
+    <g font-family="'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="46" text-anchor="middle" fill="#f3f1ec">
+      <text x="50" y="50" transform="rotate(-60 50 50)">P</text>
+      <text x="50" y="50" transform="rotate(60 50 50)">P</text>
+    </g>
+    <circle cx="50" cy="50" r="3" fill="#f3f1ec"/>
+  </g>
+
+  <g font-family="'Helvetica Neue', Arial, sans-serif" fill="#1a1a1a">
+    <text x="580" y="270" font-size="88" font-weight="800" letter-spacing="-3">Horloge</text>
+    <text x="580" y="365" font-size="88" font-weight="800" letter-spacing="-3">Passe-Partout</text>
+    <text x="580" y="445" font-size="26" font-weight="400" fill="#555">Un flip-clock embarquable, avec les</text>
+    <text x="580" y="480" font-size="26" font-weight="400" fill="#555">passe-partout qui miment les chiffres.</text>
+  </g>
+</svg>

@@ -27,6 +27,7 @@ export function App() {
   return (
     <main className="demo">
       <header>
+        <img className="logo" src="/favicon.svg" alt="" aria-hidden="true" />
         <h1>
           <span>Horloge</span>
           <span>Passe-Partout</span>
@@ -84,6 +85,11 @@ export function App() {
           <code>HH:MM:SS</code>. Absent = heure courante qui défile.
         </p>
       </section>
+
+      <footer className="footer">
+        With <span aria-label="love">❤️</span> by YavaDeus · ©{" "}
+        {new Date().getFullYear()}
+      </footer>
     </main>
   );
 }
