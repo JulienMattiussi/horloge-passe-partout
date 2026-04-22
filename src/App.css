@@ -133,6 +133,18 @@
   color: #777;
 }
 
+.demo .footer a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid #c5beac;
+  transition: border-color 0.15s ease;
+}
+
+.demo .footer a:hover {
+  border-bottom-color: #1a1a1a;
+}
+
 @media (max-width: 640px) {
   .demo {
     padding: 32px 16px 64px;

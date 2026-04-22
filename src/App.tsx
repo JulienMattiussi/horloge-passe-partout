@@ -87,8 +87,15 @@ export function App() {
       </section>
 
       <footer className="footer">
-        With <span aria-label="love">❤️</span> by YavaDeus · ©{" "}
-        {new Date().getFullYear()}
+        With <span aria-label="love">❤️</span> by{" "}
+        <a
+          href="https://github.com/JulienMattiussi/horloge-passe-partout"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          YavaDeus
+        </a>{" "}
+        · © {new Date().getFullYear()}
       </footer>
     </main>
   );

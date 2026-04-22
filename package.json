@@ -9,10 +9,10 @@
   "homepage": "https://horloge-passe-partout.vercel.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YavaDeus/horloge-passe-partout.git"
+    "url": "https://github.com/JulienMattiussi/horloge-passe-partout.git"
   },
   "bugs": {
-    "url": "https://github.com/YavaDeus/horloge-passe-partout/issues"
+    "url": "https://github.com/JulienMattiussi/horloge-passe-partout/issues"
   },
   "keywords": [
     "clock",
