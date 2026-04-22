@@ -22,8 +22,8 @@ build-snippet: ## Build the embeddable snippet only
 build-preview: ## Regenerate public/preview.svg from the digit images (needs ImageMagick)
 	bash scripts/build-preview.sh
 
-build-og: ## Rasterize public/og.svg to public/og.png (needs ImageMagick)
-	bash scripts/build-og.sh
+build-og: ## Rasterize public/og.svg to public/og.png
+	node scripts/build-og.mjs
 
 preview: ## Preview the production build locally
 	npm run preview

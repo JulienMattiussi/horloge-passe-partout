@@ -140,7 +140,7 @@ public/
   images/             # the passe-partout character images (0-9)
 scripts/
   build-preview.sh    # build preview.svg from the digit images
-  build-og.sh         # rasterize og.svg into og.png
+  build-og.mjs        # rasterize og.svg into og.png (via @resvg/resvg-js)
 tests/                # vitest unit + DOM tests
 LICENSE               # MIT license (covers the code only; see Credits)
 vercel.json           # Vercel build config (framework + outputDirectory)
