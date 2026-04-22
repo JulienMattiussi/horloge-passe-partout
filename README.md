@@ -143,6 +143,7 @@ scripts/
   build-og.sh         # rasterize og.svg into og.png
 tests/                # vitest unit + DOM tests
 LICENSE               # MIT license (covers the code only; see Credits)
+vercel.json           # Vercel build config (framework + outputDirectory)
 ```
 
 ## Image credits
