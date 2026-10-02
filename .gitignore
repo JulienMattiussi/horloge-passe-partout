@@ -8,3 +8,4 @@ dist
 # built from src/snippet/passe-partout.ts
 public/passe-partout.js
 public/passe-partout.js.map
+.claude/settings.local.json
