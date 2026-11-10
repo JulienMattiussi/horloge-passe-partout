@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <a href="https://horloge-passe-partout.vercel.app/"><strong>🕰️  Live demo →</strong></a>
+  <a href="https://horloge-passe-partout.yavadeus.dev/"><strong>🕰️  Live demo →</strong></a>
 </p>
 
 <p align="center">
@@ -49,7 +49,7 @@ Drop these two lines into any HTML page:
 
 ```html
 <div data-passe-partout data-format="HH:MM"></div>
-<script src="https://horloge-passe-partout.vercel.app/passe-partout.js"></script>
+<script src="https://horloge-passe-partout.yavadeus.dev/passe-partout.js"></script>
 ```
 
 Supported attributes on the container:
@@ -95,8 +95,8 @@ the clock renders unstyled. You need either:
 
 ```
 style-src 'self' 'unsafe-inline';
-script-src 'self' https://horloge-passe-partout.vercel.app;
-img-src    'self' https://horloge-passe-partout.vercel.app data:;
+script-src 'self' https://horloge-passe-partout.yavadeus.dev;
+img-src    'self' https://horloge-passe-partout.yavadeus.dev data:;
 ```
 
 or a nonce-based allowlist. The `data:` source in `img-src` is there because

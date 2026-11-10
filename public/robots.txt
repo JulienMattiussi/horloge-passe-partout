@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://horloge-passe-partout.vercel.app/sitemap.xml
+Sitemap: https://horloge-passe-partout.yavadeus.dev/sitemap.xml

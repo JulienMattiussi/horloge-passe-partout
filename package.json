@@ -6,7 +6,7 @@
   "description": "A tiny embeddable flip-clock widget using passe-partout characters.",
   "author": "YavaDeus",
   "license": "MIT",
-  "homepage": "https://horloge-passe-partout.vercel.app",
+  "homepage": "https://horloge-passe-partout.yavadeus.dev",
   "repository": {
     "type": "git",
     "url": "https://github.com/JulienMattiussi/horloge-passe-partout.git"
